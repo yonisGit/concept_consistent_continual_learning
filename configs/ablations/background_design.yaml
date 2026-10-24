@@ -1,0 +1,8 @@
+# Table "abl_background": stabilisation (C3L) vs suppression vs no background term
+base: ../imagenet_r_vit.yaml
+seeds: [0, 1, 2, 3, 4]
+runs:
+  stabilize_c3l: []
+  noreplay_suppress: [method.name=c3l_noreplay]
+  replay_suppress: [method.background=suppress]
+  no_background: [method.background=none]

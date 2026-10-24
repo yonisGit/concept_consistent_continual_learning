@@ -1,0 +1,10 @@
+# ViT-B/16 (ImageNet-21K) + AttnLRP. lambda_concept=0.8, lambda_stab=1.2 (Appendix A)
+model:
+  arch: vit
+  vit_name: vit_base_patch16_224.augreg_in21k
+method:
+  name: c3l
+  lambda_concept: 0.8
+  lambda_stab: 1.2
+explainer:
+  name: attnlrp

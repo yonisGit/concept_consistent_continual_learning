@@ -1,0 +1,21 @@
+# core
+torch>=2.1
+torchvision>=0.16
+timm>=0.9.12
+numpy>=1.24
+Pillow>=9.5
+PyYAML>=6.0
+scipy>=1.10
+scikit-learn>=1.2
+tqdm>=4.65
+matplotlib>=3.7
+# concept discovery (LLM, LF-CBM prompts)
+openai>=1.0
+sentence-transformers>=2.2      # optional: LF-CBM similarity filters (falls back to difflib)
+# spatial grounding
+ultralytics>=8.3.237            # SAM 3 (SAM3SemanticPredictor); needs the sam3.pt weights
+transformers>=4.40              # Grounding-DINO for the Grounded-SAM ablation
+# optional
+pycocotools>=2.0                # PartImageNet ground-truth part masks (C3L-PG)
+nltk>=3.8                       # WordNet class names when LOC_synset_mapping.txt is absent
+pytest>=7.0

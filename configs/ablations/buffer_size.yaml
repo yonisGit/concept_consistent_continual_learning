@@ -1,0 +1,5 @@
+# Table "buffer_size": |M| in {200, 500, 1000}
+base: ../imagenet_r_vit.yaml
+seeds: [0, 1, 2, 3, 4]
+grid:
+  replay.buffer_size: [200, 500, 1000]

@@ -1,0 +1,9 @@
+# RQ4: fine-tune on 500 ImageNet classes x 5 images, evaluate on ImageNet-A / ObjectNet.
+inherit: _vit.yaml
+experiment_name: robustness_vit
+model: {vit_name: vit_base_patch16_224.augreg_in21k_ft_in1k}   # ImageNet-1K head (ignored for resnet18)
+data: {name: imagenet_subset}
+train: {epochs: 10, batch_size: 32}
+concepts:
+  bank_path: ./concept_banks/imagenet_subset_raw.json
+  validated_bank_path: ./concept_banks/imagenet_subset_validated.json

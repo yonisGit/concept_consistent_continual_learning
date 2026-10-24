@@ -1,0 +1,10 @@
+# Appendix "Performance without foundation models": ResNet-18 from scratch on PartImageNet,
+# 150 classes / 10 tasks of 15. This file is C3L-PG (ground-truth part masks, no LLM / SAM 3).
+# For plain C3L on the same split use: --set grounding.method=sam3 concepts.bank_path=...
+inherit: _resnet18.yaml
+experiment_name: partimagenet_resnet18_c3l_pg
+model: {pretrained: false}
+data: {name: partimagenet, num_tasks: 10}
+train: {epochs: 50}
+grounding: {method: gt_parts}
+concepts: {use_validated: false}

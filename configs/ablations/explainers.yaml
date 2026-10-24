@@ -1,0 +1,5 @@
+# Table "abl_xai": AttnLRP vs Grad-CAM vs IIA vs T-Attr inside C3L (ViT-B, ImageNet-R)
+base: ../imagenet_r_vit.yaml
+seeds: [0, 1, 2, 3, 4]
+grid:
+  explainer.name: [attnlrp, gradcam_vit, iia, tattr]

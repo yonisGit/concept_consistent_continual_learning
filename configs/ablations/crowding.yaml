@@ -1,0 +1,5 @@
+# Appendix "Crowding-out": relevance mass flow on the T1 test set of CUB (ViT-B, 10 tasks)
+base: ../cub_vit.yaml
+seeds: [0]
+runs:
+  c3l: ["analysis.crowding_tasks=[1,3,5,8,10]"]

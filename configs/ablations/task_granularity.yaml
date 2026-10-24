@@ -1,0 +1,5 @@
+# Table "task_split_ablation": T in {5, 10, 20}
+base: ../imagenet_r_vit.yaml
+seeds: [0, 1, 2, 3, 4]
+grid:
+  data.num_tasks: [5, 10, 20]

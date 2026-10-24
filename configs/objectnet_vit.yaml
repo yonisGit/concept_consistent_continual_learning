@@ -1,0 +1,8 @@
+inherit: _vit.yaml
+experiment_name: objectnet_vit_c3l
+# 113 classes -> 110 used so that the 10 tasks have equal size (remainder dropped)
+data: {name: objectnet, num_tasks: 10}
+train: {epochs: 20}
+concepts:
+  bank_path: ./concept_banks/objectnet_raw.json
+  validated_bank_path: ./concept_banks/objectnet_validated.json

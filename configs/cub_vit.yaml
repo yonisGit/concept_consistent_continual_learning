@@ -1,0 +1,8 @@
+inherit: _vit.yaml
+experiment_name: cub_vit_c3l
+data: {name: cub, num_tasks: 10}
+train: {epochs: 50}
+concepts:
+  bank_path: ./concept_banks/cub_raw.json
+  validated_bank_path: ./concept_banks/cub_validated.json
+analysis: {localization: true}

@@ -1,0 +1,12 @@
+# RQ2 spurious-correlation protocol (Split ImageNet-100C, Lee et al. 2024).
+# Sweep data.imagenet100c.skew_ratio over the seven bias levels.
+inherit: _resnet18.yaml
+experiment_name: imagenet100c_resnet18_c3l
+data:
+  name: imagenet100c
+  num_tasks: 10
+  imagenet100c: {skew_ratio: 0.5, noise_std: 0.18, base_corrupt_rate: 0.01}
+train: {epochs: 20}
+concepts:
+  bank_path: ./concept_banks/imagenet100c_raw.json
+  validated_bank_path: ./concept_banks/imagenet100c_validated.json

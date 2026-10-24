@@ -1,0 +1,8 @@
+# Table "partimagenet_results": C3L (LLM + SAM 3) vs C3L-PG (ground-truth parts), ER reference
+base: ../partimagenet_resnet18_scratch.yaml
+seeds: [0, 1, 2, 3, 4]
+runs:
+  c3l_pg: []
+  c3l: [grounding.method=sam3, concepts.bank_path=./concept_banks/partimagenet_raw.json,
+        concepts.validated_bank_path=./concept_banks/partimagenet_validated.json, concepts.use_validated=true]
+  er: [method.name=er]

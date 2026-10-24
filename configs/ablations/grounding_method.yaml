@@ -1,0 +1,5 @@
+# Table "grounding_comparison": SAM 3 vs Grounded-SAM
+base: ../imagenet_r_vit.yaml
+seeds: [0, 1, 2, 3, 4]
+grid:
+  grounding.method: [sam3, grounded_sam]

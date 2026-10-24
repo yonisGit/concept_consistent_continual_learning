@@ -1,0 +1,9 @@
+# RQ1 (Table results_cnn / results_cnn_full): C3L, C3L++ and reference points, 5 seeds.
+# Run once per base config, e.g.  python scripts/run_sweep.py configs/ablations/main_results.yaml --base configs/cub_vit.yaml
+seeds: [0, 1, 2, 3, 4]
+runs:
+  c3l: []
+  c3l_pp: [method.name=c3l_pp]
+  er: [method.name=er]
+  finetune: [method.name=finetune]
+  joint_training: [method.name=joint]

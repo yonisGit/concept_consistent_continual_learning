@@ -1,0 +1,8 @@
+# Table "ablations": contribution of each regularisation term (ImageNet-R and CUB, ViT-B)
+base: ../imagenet_r_vit.yaml
+seeds: [0, 1, 2, 3, 4]
+runs:
+  c3l: []
+  wo_concept: [method.lambda_concept=0.0]
+  wo_stab: [method.lambda_stab=0.0]
+  wo_both_er: [method.name=er]

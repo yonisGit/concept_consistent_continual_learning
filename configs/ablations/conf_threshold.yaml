@@ -1,0 +1,5 @@
+# Table "threshold_ablation": SAM 3 confidence threshold tau_conf
+base: ../imagenet_r_vit.yaml
+seeds: [0, 1, 2, 3, 4]
+grid:
+  grounding.confidence_threshold: [0.2, 0.3, 0.4, 0.5]

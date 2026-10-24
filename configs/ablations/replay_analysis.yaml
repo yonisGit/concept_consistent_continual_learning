@@ -1,0 +1,8 @@
+# Table "replay_analysis" (Appendix D): ER vs C3L-NoReplay vs C3L-FullReplay vs C3L
+base: ../imagenet_r_vit.yaml
+seeds: [0, 1, 2, 3, 4]
+runs:
+  er: [method.name=er]
+  c3l_noreplay: [method.name=c3l_noreplay]
+  c3l_fullreplay: [method.name=c3l_fullreplay]
+  c3l: []

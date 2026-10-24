@@ -1,0 +1,9 @@
+# Table "hyperparam_sensitivity": (lambda_concept, lambda_stab) pairs
+base: ../imagenet_r_vit.yaml
+seeds: [0, 1, 2, 3, 4]
+runs:
+  l0.5_0.6: [method.lambda_concept=0.5, method.lambda_stab=0.6]
+  l0.8_1.2: [method.lambda_concept=0.8, method.lambda_stab=1.2]
+  l1.0_1.5: [method.lambda_concept=1.0, method.lambda_stab=1.5]
+  l1.5_2.0: [method.lambda_concept=1.5, method.lambda_stab=2.0]
+  l2.0_2.5: [method.lambda_concept=2.0, method.lambda_stab=2.5]

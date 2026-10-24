@@ -1,0 +1,9 @@
+# RQ2 spurious-correlation protocol (Fitzpatrick17k). Task split is configurable;
+# 114 conditions -> 110 used with 10 tasks of 11 classes.
+inherit: _resnet18.yaml
+experiment_name: fitz_resnet18_c3l
+data: {name: fitz, num_tasks: 10}
+train: {epochs: 50}
+concepts:
+  bank_path: ./concept_banks/fitz_raw.json
+  validated_bank_path: ./concept_banks/fitz_validated.json

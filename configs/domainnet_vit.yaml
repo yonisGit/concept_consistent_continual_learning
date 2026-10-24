@@ -1,0 +1,8 @@
+inherit: _vit.yaml
+experiment_name: domainnet_vit_c3l
+# 345 classes in 5 tasks of 69 classes
+data: {name: domainnet, num_tasks: 5}
+train: {epochs: 20}
+concepts:
+  bank_path: ./concept_banks/domainnet_raw.json
+  validated_bank_path: ./concept_banks/domainnet_validated.json

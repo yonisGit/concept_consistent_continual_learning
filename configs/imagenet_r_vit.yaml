@@ -1,0 +1,7 @@
+inherit: _vit.yaml
+experiment_name: imagenet_r_vit_c3l
+data: {name: imagenet_r, num_tasks: 10}
+train: {epochs: 20}
+concepts:
+  bank_path: ./concept_banks/imagenet_r_raw.json
+  validated_bank_path: ./concept_banks/imagenet_r_validated.json

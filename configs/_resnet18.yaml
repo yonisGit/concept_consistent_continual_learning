@@ -1,0 +1,9 @@
+# ResNet-18 (ImageNet-1K) + epsilon-LRP (eps=1e-6). lambda_concept=1.0, lambda_stab=1.5 (Appendix A)
+model:
+  arch: resnet18
+method:
+  name: c3l
+  lambda_concept: 1.0
+  lambda_stab: 1.5
+explainer:
+  name: lrp

@@ -1,0 +1,4 @@
+# Appendix "Performance on Non-Pretrained Networks"
+inherit: cub_resnet18.yaml
+experiment_name: cub_resnet18_scratch_c3l
+model: {pretrained: false}

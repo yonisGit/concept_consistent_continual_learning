@@ -1,0 +1,6 @@
+# Table "concept_vs_object": concept masks vs SAM 3 object masks (class-name prompt)
+base: ../imagenet_r_vit.yaml
+seeds: [0, 1, 2, 3, 4]
+runs:
+  concept_masks: []
+  object_masks: [grounding.method=object]

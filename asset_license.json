@@ -1,0 +1,51 @@
+{
+  "assets": [
+    {
+      "asset": "CUB-200-2011",
+      "license": "Custom (Non-commercial)",
+      "url": "https://www.vision.caltech.edu/datasets/cub_200_2011/"
+    },
+    {
+      "asset": "DomainNet",
+      "license": "Custom (Research Use)",
+      "url": "https://ai.bu.edu/M3SDA/"
+    },
+    {
+      "asset": "ImageNet-1K / 21K",
+      "license": "ImageNet Terms of Access",
+      "url": "https://www.image-net.org/download.php"
+    },
+    {
+      "asset": "ImageNet-R",
+      "license": "MIT License",
+      "url": "https://github.com/hendrycks/imagenet-r"
+    },
+    {
+      "asset": "ImageNet-A",
+      "license": "MIT License",
+      "url": "https://github.com/hendrycks/natural-adv-examples"
+    },
+    {
+      "asset": "ObjectNet",
+      "license": "MIT License",
+      "url": "https://objectnet.dev/"
+    },
+    {
+      "asset": "Fitzpatrick17K",
+      "license": "CC BY-NC-SA 3.0",
+      "url": "https://github.com/mattgroh/fitzpatrick17k"
+    },
+    {
+      "asset": "PartImageNet",
+      "license": "CC BY 4.0",
+      "url": "https://github.com/TACJu/PartImageNet"
+    },
+    {
+      "asset": "All baseline methods (e.g., RRR, EPR, L2P, CODA-Prompt) were implemented using their officially released codebases.",
+      "common_licenses": [
+        "MIT License",
+        "Apache 2.0 License"
+      ]
+    }
+  ]
+}
